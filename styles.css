@@ -1,0 +1,73 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    touch-action: manipulation;
+}
+
+.container {
+    text-align: center;     /* Κείμενα/κουμπιά κεντραρισμένα */
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 90%;            /* Προσαρμογή στο πλάτος */
+    max-width: 500px;       /* Μέγιστο πλάτος */
+}
+
+canvas {
+    display: block;         /* Αφαίρεση περιττών περιθωρίων */
+    margin: 0 auto;         /* Οριζόντιο κεντράρισμα */
+    background: #e0e0e0;
+    border: 2px solid #333;
+    aspect-ratio: 1/1;      /* Τετράγωνος καμβάς */
+    width: 100%;            /* Προσαρμογή στο container */
+    max-width: 400px;       /* Μέγιστο μέγεθος */
+	touch-action: none;
+}
+
+h1 {
+    color: #333;
+    font-size: 1.5rem;
+}
+
+.controls {
+    margin: 15px 0;
+}
+
+.controls select, .controls button {
+    padding: 8px;
+    margin: 0 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+}
+
+.scores {
+    margin: 15px 0;
+    font-size: 1.2rem;
+}
+
+#highScore {
+    color: #d9534f;
+    font-weight: bold;
+}
+
+.tip {
+    font-size: 0.9rem;
+    color: #666;
+    margin-top: 10px;
+}
+
+@media (max-width: 600px) {
+    .container {
+        padding: 10px;
+    }
+    canvas {
+        max-width: 300px;  /* Μικρότερος καμβάς σε κινητά */
+    }
+}
