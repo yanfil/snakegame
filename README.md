@@ -1,2 +1,2 @@
-# snakegame - it's a gema developted by queries to the Deepseek
+# snakegame - it's a game developted by queries to the Deepseek
 snakegame
